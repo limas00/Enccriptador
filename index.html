@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2family=Inter:wght@200;300;400&display=swap">
+    <link rel="stylesheet" href="stayle.css">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+
+    <header>
+            <img class="logo" src="img/Frame 6.png" alt="logo">
+    </header>
+
+    <main>
+        <section>
+            <div class="contenedor_texto">
+                <textarea placeholder="Ingrese el texto aqui" class="ingreso_texto"  id="ingresoTexto"></textarea>
+            </div>
+
+            <div class="logo_alerta">
+                <img src="img/Vector.png" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="contenedor_botones">
+                <input type="button" class="boton_encriptar" id="botonEncriptar" value="Encriptar">
+                <input type="button" class="boton_desencriptar" id="botonDesencriptar" value="Desencriptar">
+            </div>
+        </section>
+
+        <section class="zona_derecha" id="right">
+            <img id="muneco" src="img/Muñeco.png" alt="">
+            
+                <textarea id="mensajeFinal" class="mensaje_final " placeholder="Ningun mensaje fue encontrado"></textarea>
+                <p id="parrafo_informacion" class="parrafo_informacion">Ingrese el texto que desees encriptar o <br> desencriptar</p>
+      
+            <div class="contenedor_copiar">
+                <input type="button" id="botonCopiar" class="boton_copiar" value="Copiar">
+            </div>
+        </section>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>
